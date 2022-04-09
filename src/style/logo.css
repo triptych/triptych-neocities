@@ -1,0 +1,69 @@
+/** triptych glow **/
+@import url("https://fonts.googleapis.com/css?family=Akronim&display=swap");
+
+.glow {
+    font-family: "Akronim", cursive;
+    animation: pulsecolor 30s ease infinite;
+
+}
+
+
+
+h1.glow {
+    font-size: 100px;
+    color: rgb(181, 16, 223);
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+        0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
+  @keyframes pulsecolor {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes pulsecolor {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes pulsecolor {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    h1.glow {
+        color: #fff;
+    }
+  }
